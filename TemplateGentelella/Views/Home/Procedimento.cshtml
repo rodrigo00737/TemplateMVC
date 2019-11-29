@@ -1,0 +1,287 @@
+﻿@{
+    ViewBag.Title = "Procedimento";
+}
+
+@*Paciente*@
+<div class="x_panel">
+    <div class="x_title">
+        <h2>Cadastrado de Procedimentos</h2>
+        <div class="clearfix"></div>
+    </div>
+    <table>
+        <tr>
+            <td class="col-lg-6">
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left">
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Paciente</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control">
+                                    <option>Selecione</option>
+                                    <option>JOÃO DA SILVA MENDES</option>
+                                    <option>MARIA APARECIDA ROSA</option>
+                                    <option>CLAUDIO DIVINO ALVES</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-4 col-sm-4 col-xs-4">Data Nascimento</label>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <input type="text" class="form-control" disabled="disabled" placeholder="Data Nascimento">
+                            </div>
+                            <label class="control-label col-md-2 col-sm-2 col-xs-2">Idade</label>
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <input type="text" disabled="disabled" class="form-control" placeholder="Idade">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </td>
+            <td class="col-lg-6">
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left">
+
+                        <div class="form-group">
+                            <label class="control-label col-lg-3">Terapeuta</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <select class="form-control">
+                                    <option>Selecione</option>
+                                    <option>JOÃO DA SILVA MENDES</option>
+                                    <option>MARIA APARECIDA ROSA</option>
+                                    <option>CLAUDIO DIVINO ALVES</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-3">Quantidade Horas</label>
+                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                <input type="text" class="form-control" placeholder="Horas">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+@*Procedimentos*@
+<div class="x_panel">
+    <div class="x_title">
+        <h2 class="headertekst">Preparação<small></small></h2>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-4 col-lg-4 col-xs-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value=""> Escovação
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value=""> Alongamento
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-4 col-lg-4 col-xs-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value=""> Órtese
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value=""> Macacão
+                    </label>
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-4 col-lg-4 col-xs-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value=""> Aquecimento
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value=""> Co-contração
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2 class="headertekst">Terapia PediaSuit<small> Selecione os procedimentos realizados</small></h2>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="x_content">
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Ortostatismo</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    <div class="form-group col-lg-2">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="">
+                        <label class="form-check-label" for="inlineCheckbox1">Livre</label>
+                    </div>
+                    <div class="form-group col-lg-2">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="">
+                        <label class="form-check-label" for="inlineCheckbox1">Spider</label>
+                    </div>
+                    <div class="form-group col-lg-3">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="">
+                        <label class="form-check-label" for="inlineCheckbox1">Unipodal</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Monkey</h2>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Default Input</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="demo1 form-control" value="#5367ce" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Styled</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="input-group demo2">
+                                    <input type="text" value="#e01ab5" class="form-control" />
+                                    <span class="input-group-addon"><i></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Horizontal bar</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control demo colorpicker-element" data-horizontal="true" id="demo_forceformat" value="#8fff00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Vertical bar</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control demo colorpicker-element" id="demo_forceformat3" value="#8fff00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Inline picker</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="well">
+                                    <div id="demo_cont" class="demo demo-auto inl-bl colorpicker-element" data-container="#demo_cont" data-color="rgba(150,216,62,0.55)" data-inline="true"></div>
+                                    <div class="demo demo-auto inl-bl colorpicker-element" data-container="true" data-color="rgb(50,216,62)" data-inline="true" style="margin-left:20px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>Color Picker</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#">Settings 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Settings 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left">
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Default Input</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="demo1 form-control" value="#5367ce" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Styled</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="input-group demo2">
+                                    <input type="text" value="#e01ab5" class="form-control" />
+                                    <span class="input-group-addon"><i></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Horizontal bar</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control demo colorpicker-element" data-horizontal="true" id="demo_forceformat" value="#8fff00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Vertical bar</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control demo colorpicker-element" id="demo_forceformat3" value="#8fff00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Inline picker</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div class="well">
+                                    <div id="demo_cont" class="demo demo-auto inl-bl colorpicker-element" data-container="#demo_cont" data-color="rgba(150,216,62,0.55)" data-inline="true"></div>
+                                    <div class="demo demo-auto inl-bl colorpicker-element" data-container="true" data-color="rgb(50,216,62)" data-inline="true" style="margin-left:20px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+

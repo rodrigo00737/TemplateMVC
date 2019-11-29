@@ -1,0 +1,85 @@
+﻿@model TemplateGentelella.Models.Paciente
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>Deletar paciente</h2>
+        <div class="clearfix"></div>
+    </div>
+    @*<div class="x_content">
+            @Html.ActionLink("Editar", "Edit", null, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-default" })
+        </div>*@
+</div>
+
+<div class="x_panel">
+    <div class="x_content">
+        <div class="row">
+            <h3>Tem certeza que deseja deletar esse item?</h3>
+            <div>               
+                <hr />
+                <dl class="dl-horizontal">
+                    <div class="row h4">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Nome)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Nome)
+                        </dd>
+                    </div>
+                    <hr />                   
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.DataNascimento)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.DataNascimento)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Endereco)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Endereco)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Telefone)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Telefone)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                </dl>
+                <hr />
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            @Html.ActionLink("Voltar", "Index", null, new { @class = "btn btn-default" })
+                            <input type="submit" value="Confirmar" class="btn btn-primary" />                           
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
