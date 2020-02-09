@@ -123,6 +123,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PacienteClinicaController.cs" />
     <Compile Include="Controllers\PacienteController.cs" />
     <Compile Include="Controllers\VendaController.cs" />
     <Compile Include="Global.asax.cs">
@@ -131,6 +132,7 @@
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Paciente.cs" />
     <Compile Include="Models\PacienteClinica.cs" />
+    <Compile Include="Models\PacienteClinicaPlanoSaude.cs" />
     <Compile Include="Models\Venda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -4579,6 +4581,11 @@
     <Content Include="Views\Paciente\Delete.cshtml" />
     <Content Include="Views\Paciente\Details.cshtml" />
     <Content Include="Views\Home\VDN.cshtml" />
+    <Content Include="Views\PacienteClinica\Create.cshtml" />
+    <Content Include="Views\PacienteClinica\_PartialFichaPaciente.cshtml" />
+    <Content Include="Views\PacienteClinica\_PacienteAnexos.cshtml" />
+    <Content Include="Views\PacienteClinica\_PacienteNegociacao.cshtml" />
+    <Content Include="Views\PacienteClinica\_PacienteNegociacao1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
